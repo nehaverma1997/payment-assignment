@@ -1,0 +1,35 @@
+.get-booking table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.get-booking table {
+    margin-top: 4%;
+    border-collapse: collapse;
+    width: 98%;
+}
+
+.get-booking th, td {
+    padding: 15px;
+}
+
+.button {
+    background-color: #800517; 
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin: 4px 2px; */
+    cursor: pointer;
+    /* margin-top: 3%; */
+}
+
+.myAlert-top{
+    position: fixed;
+    top: 90%; 
+    left:1%;
+    width: 21%;
+}

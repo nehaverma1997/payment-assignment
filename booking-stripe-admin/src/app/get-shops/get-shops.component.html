@@ -1,0 +1,24 @@
+<div class="get-all-shops">
+    <table class="table table-striped  table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Shop Name</th>
+            <th scope="col">Shop Owner Name</th>
+            <th scope="col">Shop Address</th>
+            <th scope="col">Shop Wallet</th>
+            <th scope="col">Shop Account</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor = 'let shops of data'>
+            <th scope="row">{{shops.id}}</th>
+            <td>{{shops.shop_name}}</td>
+            <td>{{shops.shop_author}}</td>
+            <td>{{shops.shop_address}}</td>
+            <td>{{shops.shop_wallet}}</td>
+            <td>{{shops.stripe_account_key}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

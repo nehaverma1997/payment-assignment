@@ -1,0 +1,26 @@
+<div class="get-booking">
+  <table>
+    <tr>
+        <th>S.No</th>
+        <th>Item Type</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Payment</th>
+    </tr>
+    <tr *ngFor = "let booking of bookingData">
+        <td>{{booking.id}}</td>
+        <td>{{booking.item_type}}</td>
+        <td>{{booking.quantity}}</td>
+        <td>{{booking.price}}</td>
+        <td>
+          <span *ngIf="booking.payment_status != 'Pending'">{{booking.payment_status}}</span>
+          <button class = "button" data-toggle="modal" data-target="#conitunePaymentForm" *ngIf="booking.payment_status == 'Pending'" (click)="makePayment(booking)">Make Payment</button>
+        </td>
+    </tr>
+  </table>
+</div>
+
+<div class="myAlert-top alert alert-success" id="conitunePaymentForm" *ngIf = 'data'>
+  <a href="#" class="close" data-dismiss="alert" aria-label="close" (click)='clickClose()'>&times;</a>
+  <strong>{{data.data}}</strong>
+</div>

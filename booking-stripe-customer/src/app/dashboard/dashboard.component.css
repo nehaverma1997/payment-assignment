@@ -1,0 +1,26 @@
+.container-fluid{
+    background-color: #800517
+}
+
+.main-left{
+    background-color: #800517
+}
+a {
+    color: 337ab7;
+    text-decoration: none;
+    line-height: 1.3em;
+    font-size: 18px;
+}
+a.logo-Style {
+    width: 100px;
+    display: block;
+    margin-right: 50px;
+    margin-top: 5%;
+}
+a.logo-Style img{
+    width: 100%;
+}
+
+.main-right .tab-content {
+    padding-top: 0px;
+}

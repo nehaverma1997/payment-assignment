@@ -1,0 +1,20 @@
+<div class="add-card">
+    <button class="button button2">Add Card</button> 
+</div>
+
+<div class="card-details">
+  <table>
+    <tr>
+      <td>Card Number</td>
+      <td>Card Type</td>
+      <td>Default</td>
+      <td>Delete</td>
+    </tr>
+    <tr *ngIf="card">
+        <td>**** **** **** {{card.card_number}}</td>
+        <td>{{card.card_type}}</td>
+        <td>{{card.default}}</td>
+        <td><button class="button">Remove</button></td>
+      </tr>
+  </table>
+</div>

@@ -1,0 +1,42 @@
+.card-details table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.card-details table {
+    margin-top: 4%;
+    border-collapse: collapse;
+    width: 98%;
+}
+
+.card-details th, td {
+    padding: 15px;
+}
+
+.add-card .button {
+    background-color: #800517; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 3%;
+    margin-left: 85%;
+}
+
+.button {
+    background-color: #800517; 
+    border: none;
+    color: white;
+    padding: 12px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 12px;
+}

@@ -1,0 +1,14 @@
+.payment-history table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.payment-history table {
+    margin-top: 4%;
+    border-collapse: collapse;
+    width: 98%;
+}
+
+.payment-history th, td {
+    padding: 15px;
+}

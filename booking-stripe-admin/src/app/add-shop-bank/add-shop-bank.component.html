@@ -1,0 +1,37 @@
+<div class="add-shop-bank">
+    <div id="addShopBankForm">
+      <form id="">
+        <form #addShopBankForm="ngForm" (ngSubmit)="addShopBankForm.valid && addShopBankOnSubmit(addShopBankForm)">
+          <div class="form-group">
+            <input type="email" class="form-control" id="" placeholder="Enter stripe account key" name="stripe_account_key" #name="ngModel"
+              [(ngModel)]="addShopBank.stripe_account_key" required='true'>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="" placeholder="Enter shop id" name="shop_id" #name="ngModel"
+              [(ngModel)]="addShopBank.shop_id" required='true'>
+          </div>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#doneBankForm" data-dismiss="modal">Add Shop Bank</button>
+        </form>
+      </form>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="doneBankForm" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>{{successMessage}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>

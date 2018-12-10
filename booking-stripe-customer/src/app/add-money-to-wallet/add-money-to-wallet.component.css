@@ -1,0 +1,19 @@
+.add-money-to-wallet{
+    margin-top: 10%;
+    padding: 10px 10px;
+    margin-left: 20%;
+    
+}
+
+.form-control{
+    width: 55%;
+}
+
+.button{
+    background: transparent;
+    color: white;
+    background: #800517;
+    padding: 10px 15px;
+    outline: none;
+    cursor: pointer;
+}

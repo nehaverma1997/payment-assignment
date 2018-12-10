@@ -1,0 +1,14 @@
+.profile{
+    background: LightGray;
+    height: 100vh;
+    
+}
+
+.background{
+    margin-top: 10%;
+    padding: 8px 50px !important;
+}
+
+.btn-space {
+    margin-right: 20px;
+}

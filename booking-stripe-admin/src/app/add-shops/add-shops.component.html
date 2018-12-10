@@ -1,0 +1,41 @@
+<div class="add-shop">
+    <div id="addShopForm">
+      <form id="">
+        <form #addShopForm="ngForm" (ngSubmit)="addShopForm.valid && addShopOnSubmit(addShopForm)">
+          <div class="form-group">
+            <input type="text" class="form-control" id="" placeholder="Enter Shop Name" name="shop_name" #name="ngModel"
+              [(ngModel)]="addShopModel.shop_name" required='true'>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="" placeholder="Enter Shop Author Name" name="shop_author" #name="ngModel"
+              [(ngModel)]="addShopModel.shop_author" required='true'>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="" placeholder="Enter Shop shop_address" name="shop_address" #name="ngModel"
+              [(ngModel)]="addShopModel.shop_address" required='true'>
+          </div>
+          <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#doneForm" data-dismiss="modal">Add Shop</button>
+        </form>
+      </form>
+    </div>
+  </div>
+  
+  
+  <div class="modal" id="doneForm" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Message</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>{{successMessage}}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Continue</button>
+        </div>
+      </div>
+    </div>
+  </div>

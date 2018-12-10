@@ -1,0 +1,26 @@
+<div class="get-all-bookings">
+    <table class="table table-striped  table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Customer</th>
+            <th scope="col">Item Type</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Booking Status</th>
+            <th scope="col">Payment Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let bookingData of data'>
+            <th scope="row">{{bookingData.id}}</th>
+            <td>{{bookingData.user}}</td>
+            <td>{{bookingData.item_type}}</td>
+            <td>{{bookingData.quantity}}</td>
+            <td>{{bookingData.price}}</td>
+            <td>{{bookingData.booking_status}}</td>
+            <td>{{bookingData.payment_status}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>

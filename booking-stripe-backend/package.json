@@ -1,0 +1,27 @@
+{
+  "name": "booking-project",
+  "version": "1.0.0",
+  "description": "booking project in which paymnet is via stripe",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Neha Verma",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "bcrypt": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "cron": "^1.5.1",
+    "express": "^4.16.4",
+    "handlebars": "^4.0.12",
+    "is-port-free": "^1.0.7",
+    "jsonwebtoken": "^8.4.0",
+    "mysql": "^2.16.0",
+    "nodemon": "^1.18.7",
+    "request": "^2.88.0",
+    "stripe": "^6.17.0"
+  }
+}

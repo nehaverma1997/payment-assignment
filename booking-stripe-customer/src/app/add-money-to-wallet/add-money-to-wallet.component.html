@@ -1,0 +1,36 @@
+<div class="add-money-to-wallet">
+  <div id="addMoenyForm">
+    <form id="">
+      <form #addMoneyForm="ngForm" (ngSubmit)="addMoneyForm.valid && addMoneyOnSubmit(addMoneyForm)">
+        <div class="form-group">
+          <input type="email" class="form-control" id="" placeholder="Enter email" name="email" #name="ngModel"
+            [(ngModel)]="addMoneyMoney.username" required='true'>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="" placeholder="Enter Money To Add In Wallet" name="money" #name="ngModel"
+            [(ngModel)]="addMoneyMoney.money" required='true'>
+        </div>
+        <button type="submit" class="button" data-toggle="modal" data-target="#addMoneyToWalletForm" data-dismiss="modal">Add Money</button>
+      </form>
+    </form>
+  </div>
+</div>
+
+<div class="modal" id="addMoneyToWalletForm" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>{{successMessage}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button" data-dismiss="modal" routerLink='/Get/Profile'>Continue</button>
+      </div>
+    </div>
+  </div>
+</div>

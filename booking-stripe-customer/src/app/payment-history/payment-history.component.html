@@ -1,0 +1,16 @@
+<div class="payment-history">
+  <table>
+    <tr>
+      <td>Booking Id</td>
+      <td>Item Type</td>
+      <td>Price</td>
+      <td>Status</td>
+    </tr>
+    <tr *ngFor = "let paymentData of paymentData">
+        <td>{{paymentData.booking_id}}</td>
+        <td>{{paymentData.item_type}}</td>
+        <td>{{paymentData.cost}}</td>
+        <td>{{paymentData.status}}</td>
+      </tr>
+  </table>
+</div>

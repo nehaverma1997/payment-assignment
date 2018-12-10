@@ -1,0 +1,37 @@
+.productListing {
+    margin-top: 51px;
+}
+.productList {
+    margin: 30px auto;
+    padding: 20px 15px;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.1);
+}
+.productList ul {
+    margin: 0 0 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.productList p {
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+.button {
+    background: transparent;
+    color: white;
+    background: #800517;
+    padding: 10px 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button a{
+    background: #800517;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #800517;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: all 0.3s linear;
+}
+

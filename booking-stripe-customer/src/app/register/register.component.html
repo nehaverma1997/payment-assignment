@@ -1,0 +1,65 @@
+<div class="main-bg">
+  <div class="main-bg-content page2content">
+    <div class="register">
+      <ul class="nav nav-pills">
+        <li class="active"><a data-toggle="pill" href="#loginForm">Login</a></li>
+        <li><a data-toggle="pill" href="#registerForm">Register</a></li>
+      </ul>
+      <div class="tab-content form-tab-content">
+        <div id="loginForm" class="tab-pane fade in active">
+          <form id="">
+            <form #loginForm="ngForm" (ngSubmit)="loginForm.valid && onSubmit(loginForm)">
+              <div class="form-group">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email Address" name="email"
+                  #email="ngModel" [(ngModel)]="loginModel.email" required='true'>
+              </div>
+              <!--form-group-->
+              <div class="form-group">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password" name="password"
+                  #password='ngModel' [(ngModel)]="loginModel.password" required='true'>
+              </div>
+              <!--form-group-->
+              <div class="fg">
+                <a href="" class="forget">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </form>
+        </div>
+        <!--loginForm-->
+        <div id="registerForm" class="tab-pane fade">
+          <form id="">
+            <form #registerForm="ngForm" (ngSubmit)="registerForm.valid && registeOnSubmit(registerForm)">
+              <div class="form-group">
+                <input type="text" class="form-control" id="" placeholder="Full Name" name="name" #name="ngModel"
+                  [(ngModel)]="registerModel.name" required='true'>
+              </div>
+              <!--form-group-->
+              <div class="form-group">
+                <input type="number" class="form-control" id="" placeholder="Phone Number" name="phone" #name="ngModel"
+                  [(ngModel)]="registerModel.phone" required='true'>
+              </div>
+              <!--form-group-->
+              <div class="form-group">
+                <input type="email" class="form-control" id="" placeholder="Email Address" name="email" #name="ngModel"
+                  [(ngModel)]="registerModel.email" required='true'>
+              </div>
+              <!--form-group-->
+              <div class="form-group">
+                <input type="password" class="form-control" id="" placeholder="Password" name="password" #name="ngModel"
+                  [(ngModel)]="registerModel.password" required='true'>
+              </div>
+              <!--form-group-->
+              <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+          </form>
+        </div>
+        <!--registerForm-->
+      </div>
+      <!--tab-content-->
+    </div>
+    <!--register-->
+  </div>
+  <!--main-bg-content-->
+</div>
+<!--main-bg-->

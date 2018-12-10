@@ -1,0 +1,77 @@
+<header class="site-header">
+  <nav class="navbar navbar-default navbar-fixed-top navBar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="logo-Style" routerLink="/"><img src="../../assets/logo1.png" alt="logo" /> </a>
+      </div>
+      <form class="navbar-form navbar-left" action="">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" name="search">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="menuRight nav navbar-nav navbar-right">
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="navBtn" data-toggle="dropdown">Info
+            <span class="caret"></span></button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="navBtn">
+            <li role="presentation"><a role="menuitem" tabindex="-1" routerLink = '/get-profile'>Profile</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" (click)='adminLogout()'>Logout</a></li>
+          </ul>
+        </div>
+        <!--dropdown-->
+      </div>
+      <!--menuRight-->
+    </div>
+    <!--container-->
+  </nav>
+</header>
+<!--site-header-->
+<section class="main-content adminpanel">
+  <div class="main-left">
+    <ul class="nav nav-pills nav-stacked">
+      <li class="active"><a data-toggle="pill" href="#addAdmin">Add Admin</a></li>
+      <li><a data-toggle="pill" href="#getAllBooking">Get All Booking</a></li>
+      <li><a data-toggle="pill" href="#addShops">Add Shops</a></li>
+      <li><a data-toggle="pill" href="#addShopBank">Add Shop Bank</a></li>
+      <li><a data-toggle="pill" href="#listOfShops">List Of Shops</a></li>
+      <li><a data-toggle="pill" href="#listOfAdmins">List Of Admins</a></li>
+    </ul>
+  </div>
+  <!--main-left-->
+  <div class="main-right">
+    <div class="tab-content">
+      <div id="addAdmin" class="tab-pane fade in active">
+        <app-add-admin></app-add-admin>
+      </div>
+      <!--addAdmin-->
+      <div id="getAllBooking" class="tab-pane fade">
+        <app-get-all-bookings></app-get-all-bookings>
+      </div>
+      <!--getAllBooking-->
+      <div id="addShops" class="tab-pane fade">
+        <app-add-shops></app-add-shops>
+      </div>
+      <!--addShops-->
+      <div id="addShopBank" class="tab-pane fade">
+        <app-add-shop-bank></app-add-shop-bank>
+      </div>
+      <!--addShopBank-->
+      <div id="listOfShops" class="tab-pane fade">
+          <app-get-shops></app-get-shops>
+        </div>
+        <!--listOfShops-->
+        <div id="listOfAdmins" class="tab-pane fade">
+          <app-get-admins></app-get-admins>
+        </div>
+        <!--listOfAdmins-->
+    </div>
+    <!--tab-content-->
+  </div>
+  <!--main-right-->
+</section>
+<!--main-content-->
